@@ -61,9 +61,9 @@ df_raw = pd.read_csv(CSV_FILE_PATH)
 plt.savefig(save_path, dpi=300, bbox_inches='tight')
 ```
 
-## Revision Additions (R2)
+## Precision Study and Statistical Tests
 
-Files added during the second revision round, supporting the new experiments and statistical analyses referenced in the paper:
+Additional experiments and formal statistical analyses referenced in the paper:
 
 ```text
 ├── stability_token_level_report_STD_RANGE_precision_A100.csv  # Precision study: DeepSeek-Qwen3-8B under BF16/FP16/FP32 (A100, B=16 vs. B=1)
