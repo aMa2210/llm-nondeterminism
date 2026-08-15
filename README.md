@@ -60,3 +60,18 @@ df_raw = pd.read_csv(CSV_FILE_PATH)
 # Visualization and export
 plt.savefig(save_path, dpi=300, bbox_inches='tight')
 ```
+
+## Revision Additions (R2)
+
+Files added during the second revision round, supporting the new experiments and statistical analyses referenced in the paper:
+
+```text
+├── stability_token_level_report_STD_RANGE_precision_A100.csv  # Precision study: DeepSeek-Qwen3-8B under BF16/FP16/FP32 (A100, B=16 vs. B=1)
+├── ks_test_results.csv                    # Pairwise Kolmogorov-Smirnov tests of sigma distributions across GPU platforms (806 comparisons: KS D, p-value, normalized Wasserstein)
+├── Figures_final/Fig_Precision/           # Precision-study figures (sigma and range vs. probability, three formats)
+└── scripts/
+    ├── precision_gen.py                   # Precision study: generation (parameterized model/dtype/batch; TF32 disabled for FP32)
+    ├── precision_eval.py                  # Precision study: token-level evaluation -> CSV
+    ├── precision_plot.py                  # Precision study: comparison figures
+    └── ks_test_gpus.py                    # Cross-GPU KS tests -> ks_test_results.csv
+```
