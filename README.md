@@ -69,6 +69,7 @@ Additional experiments and formal statistical analyses referenced in the paper:
 ├── stability_token_level_report_STD_RANGE_precision_{A100,MTT-S4000}.csv  # Precision study: DeepSeek-Qwen3-8B under BF16/FP16/FP32 ({A100,MTT-S4000}, B=16 vs. B=1)
 ├── ks_test_results.csv                    # Pairwise Kolmogorov-Smirnov tests of sigma distributions across GPU platforms (806 comparisons: KS D, p-value, normalized Wasserstein)
 └── Figures_final/Fig_Precision/           # Precision-study figures (sigma and range vs. probability, three formats)
+```
 
 ### Precision-study environments
 
