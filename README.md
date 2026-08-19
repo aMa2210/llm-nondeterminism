@@ -69,4 +69,11 @@ Additional experiments and formal statistical analyses referenced in the paper:
 ├── stability_token_level_report_STD_RANGE_precision_{A100,MTT-S4000}.csv  # Precision study: DeepSeek-Qwen3-8B under BF16/FP16/FP32 ({A100,MTT-S4000}, B=16 vs. B=1)
 ├── ks_test_results.csv                    # Pairwise Kolmogorov-Smirnov tests of sigma distributions across GPU platforms (806 comparisons: KS D, p-value, normalized Wasserstein)
 └── Figures_final/Fig_Precision/           # Precision-study figures (sigma and range vs. probability, three formats)
+
+### Precision-study environments
+
+The precision experiments were run on two hardware platforms:
+
+* **NVIDIA A100** (40 GB): PyTorch 2.7.1 (CUDA 12.6), transformers 5.5.0. TF32 tensor-core paths were explicitly disabled for the FP32 runs.
+* **Moore Threads MTT S4000** (48 GB): host Intel Xeon Gold 6430 (15 CPU cores, 100 GB RAM allocated), Ubuntu 22.04, Python 3.10, MUSA 3.1.0, mthreads-gmi 1.14.0, Moore Threads driver 2.7.0, PyTorch 2.2.0.
 ```
