@@ -2,7 +2,7 @@
 
 This repository provides an analysis and visualization system for measuring **token-level nondeterminism** in Large Language Model (LLM) inference across different hardware platforms, model architectures, and batch sizes.
 
-**Paper:** [arXiv:2601.06118](https://arxiv.org/pdf/2601.06118) — *currently under review at IEEE Transactions on Computers (TC)*.
+**Paper:** [arXiv:2601.06118](https://arxiv.org/pdf/2601.06118) — *accepted for publication in IEEE Transactions on Computers (TC)*.
 
 ## Overview
 
